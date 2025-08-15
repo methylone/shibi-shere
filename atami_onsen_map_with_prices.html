@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4fd0de401ab6313ecf541e9fa21c1cac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4fd0de401ab6313ecf541e9fa21c1cac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4fd0de401ab6313ecf541e9fa21c1cac = L.map(
+                "map_4fd0de401ab6313ecf541e9fa21c1cac",
+                {
+                    center: [35.1036728, 139.077611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2d7c9123d9ebb5f91383d73862df7fc6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+            var marker_0df6188dde00dbcd841e6e9a99aa425b = L.marker(
+                [35.1036728, 139.077611],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+            var icon_1d70abf9d9a31bd86d7fad09e09945b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0df6188dde00dbcd841e6e9a99aa425b.setIcon(icon_1d70abf9d9a31bd86d7fad09e09945b3);
+        
+    
+        var popup_d419fcfe1de69ab3ec6ea7993e140d62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65dcc8c65869ea34eed63c9075e037d3 = $(`<div id="html_65dcc8c65869ea34eed63c9075e037d3" style="width: 100.0%; height: 100.0%;">熱海駅（中心）</div>`)[0];
+            popup_d419fcfe1de69ab3ec6ea7993e140d62.setContent(html_65dcc8c65869ea34eed63c9075e037d3);
+        
+
+        marker_0df6188dde00dbcd841e6e9a99aa425b.bindPopup(popup_d419fcfe1de69ab3ec6ea7993e140d62)
+        ;
+
+        
+    
+    
+            marker_0df6188dde00dbcd841e6e9a99aa425b.bindTooltip(
+                `<div>
+                     熱海駅（中心）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3b1ea2e1a2c5a4cdd067af6dd54d756 = L.marker(
+                [35.1026096, 139.0783615],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_d440e60e59e0e06eb6385efc3353004c = L.popup({"maxWidth": 350});
+
+        
+            var html_bd8fede8dec5c8dd88d0e6a5755b3424 = $(`<div id="html_bd8fede8dec5c8dd88d0e6a5755b3424" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>熱海駅前温泉浴場（田原浴場）</b><br>       価格（8/17[日]想定）: <b>¥500</b><br>       特徴: 共同浴場／備付なし（石けん等は購入可）<br>       駅からの距離: 0.137 km<br>       <span style='color:#555'>備考: 水曜休・目安14:00–22:00</span>     </div>     </div>`)[0];
+            popup_d440e60e59e0e06eb6385efc3353004c.setContent(html_bd8fede8dec5c8dd88d0e6a5755b3424);
+        
+
+        marker_f3b1ea2e1a2c5a4cdd067af6dd54d756.bindPopup(popup_d440e60e59e0e06eb6385efc3353004c)
+        ;
+
+        
+    
+    
+            marker_f3b1ea2e1a2c5a4cdd067af6dd54d756.bindTooltip(
+                `<div>
+                     熱海駅前温泉浴場（田原浴場）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c19db80faef12384e829f888b0e001b6 = L.marker(
+                [35.1018961, 139.0782998],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_8bbf173fef0c17410c54a3e97ea6e407 = L.popup({"maxWidth": 350});
+
+        
+            var html_a8fc67bdcb9a67c8374893e49972c399 = $(`<div id="html_a8fc67bdcb9a67c8374893e49972c399" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>湯宿 一番地（外来入浴）</b><br>       価格（8/17[日]想定）: <b>¥1,600</b><br>       特徴: タオル別（レンタル¥300）<br>       駅からの距離: 0.207 km<br>       <span style='color:#555'>備考: 受付13:00–17:00（最終16:00・混雑時停止あり）</span>     </div>     </div>`)[0];
+            popup_8bbf173fef0c17410c54a3e97ea6e407.setContent(html_a8fc67bdcb9a67c8374893e49972c399);
+        
+
+        marker_c19db80faef12384e829f888b0e001b6.bindPopup(popup_8bbf173fef0c17410c54a3e97ea6e407)
+        ;
+
+        
+    
+    
+            marker_c19db80faef12384e829f888b0e001b6.bindTooltip(
+                `<div>
+                     湯宿 一番地（外来入浴）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38e97414f7e8a53563b6f5ec5f9474b1 = L.marker(
+                [35.1020199, 139.0813236],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_3fff636d1d5edf55e433c70f7be276d3 = L.popup({"maxWidth": 350});
+
+        
+            var html_922153b50f18f53a7763a80a4dfbb2f3 = $(`<div id="html_922153b50f18f53a7763a80a4dfbb2f3" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>KKRホテル熱海（日帰り）</b><br>       価格（8/17[日]想定）: <b>¥2,000（8/1–31の夏季料金）</b><br>       特徴: フェイスタオル付／バスタオル¥200レンタル<br>       駅からの距離: 0.385 km<br>       <span style='color:#555'>備考: 概ね11:00–20:00（曜日により変動）</span>     </div>     </div>`)[0];
+            popup_3fff636d1d5edf55e433c70f7be276d3.setContent(html_922153b50f18f53a7763a80a4dfbb2f3);
+        
+
+        marker_38e97414f7e8a53563b6f5ec5f9474b1.bindPopup(popup_3fff636d1d5edf55e433c70f7be276d3)
+        ;
+
+        
+    
+    
+            marker_38e97414f7e8a53563b6f5ec5f9474b1.bindTooltip(
+                `<div>
+                     KKRホテル熱海（日帰り）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a52680a595fffda61a55b19332621cc = L.marker(
+                [35.0991512, 139.0757199],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_c71cf71eb4d1ed3c2865c49c47d73361 = L.popup({"maxWidth": 350});
+
+        
+            var html_98909a9396d61151431f7a8702d9b16f = $(`<div id="html_98909a9396d61151431f7a8702d9b16f" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>大江戸温泉物語 Premium あたみ（日帰り入浴）</b><br>       価格（8/17[日]想定）: <b>¥2,000（土日祝）</b><br>       特徴: タオル別（レンタル¥330）<br>       駅からの距離: 0.531 km<br>       <span style='color:#555'>備考: 7:00–10:00／15:00–24:00（最終22:00）</span>     </div>     </div>`)[0];
+            popup_c71cf71eb4d1ed3c2865c49c47d73361.setContent(html_98909a9396d61151431f7a8702d9b16f);
+        
+
+        marker_1a52680a595fffda61a55b19332621cc.bindPopup(popup_c71cf71eb4d1ed3c2865c49c47d73361)
+        ;
+
+        
+    
+    
+            marker_1a52680a595fffda61a55b19332621cc.bindTooltip(
+                `<div>
+                     大江戸温泉物語 Premium あたみ（日帰り入浴）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df2e1f8b49e254a851c735e0d6284e14 = L.marker(
+                [35.0985986, 139.0757854],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_9d2d19ae1ba85cfd41c365c9243686c5 = L.popup({"maxWidth": 350});
+
+        
+            var html_fd8d209450e711cc4d9e53edbfcf9cd3 = $(`<div id="html_fd8d209450e711cc4d9e53edbfcf9cd3" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>熱海シーサイドスパ＆リゾート（日帰り）</b><br>       価格（8/17[日]想定）: <b>¥1,200（土休日／タオルセット込）</b><br>       特徴: フェイスタオル＋バスタオル付<br>       駅からの距離: 0.588 km<br>       <span style='color:#555'>備考: 時間は日により変動（目安15:30–21:30など）</span>     </div>     </div>`)[0];
+            popup_9d2d19ae1ba85cfd41c365c9243686c5.setContent(html_fd8d209450e711cc4d9e53edbfcf9cd3);
+        
+
+        marker_df2e1f8b49e254a851c735e0d6284e14.bindPopup(popup_9d2d19ae1ba85cfd41c365c9243686c5)
+        ;
+
+        
+    
+    
+            marker_df2e1f8b49e254a851c735e0d6284e14.bindTooltip(
+                `<div>
+                     熱海シーサイドスパ＆リゾート（日帰り）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f13a18b3095cb0adc4d746744d65bb1e = L.marker(
+                [35.088783, 139.079055],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_4d49cf3a694d12302858cf7a0c40c1eb = L.popup({"maxWidth": 350});
+
+        
+            var html_a3bb92475af2fda247cac18f721176a6 = $(`<div id="html_a3bb92475af2fda247cac18f721176a6" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>オーシャンスパ Fuua（熱海ベイリゾート後楽園）</b><br>       価格（8/17[日]想定）: <b>¥3,410（休日）＋入湯税¥150</b><br>       特徴: 館内着・タオル込（ロウリュ除く）<br>       駅からの距離: 1.661 km<br>       <span style='color:#555'>備考: 10:00–22:00（最終21:00）／アフター料金あり</span>     </div>     </div>`)[0];
+            popup_4d49cf3a694d12302858cf7a0c40c1eb.setContent(html_a3bb92475af2fda247cac18f721176a6);
+        
+
+        marker_f13a18b3095cb0adc4d746744d65bb1e.bindPopup(popup_4d49cf3a694d12302858cf7a0c40c1eb)
+        ;
+
+        
+    
+    
+            marker_f13a18b3095cb0adc4d746744d65bb1e.bindTooltip(
+                `<div>
+                     オーシャンスパ Fuua（熱海ベイリゾート後楽園）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_381e78f8f6d8fd7daad11aeee49a9205 = L.marker(
+                [35.103426, 139.078438],
+                {}
+            ).addTo(map_4fd0de401ab6313ecf541e9fa21c1cac);
+        
+    
+        var popup_9e38bfba4ad7ec2821e385bb87b24994 = L.popup({"maxWidth": 350});
+
+        
+            var html_d346bfe1ba6726e01b827dce7b65648d = $(`<div id="html_d346bfe1ba6726e01b827dce7b65648d" style="width: 100.0%; height: 100.0%;">     <div style='font-size: 13px'>       <b>家康の湯（足湯／休止中）</b><br>       価格（8/17[日]想定）: <b>—（当面休止中）</b><br>       特徴: 通常は無料・タオル自販機あり（¥200）<br>       駅からの距離: 0.08 km<br>       <span style='color:#555'>備考: 2025/7/30から源泉不具合で休止中</span>     </div>     </div>`)[0];
+            popup_9e38bfba4ad7ec2821e385bb87b24994.setContent(html_d346bfe1ba6726e01b827dce7b65648d);
+        
+
+        marker_381e78f8f6d8fd7daad11aeee49a9205.bindPopup(popup_9e38bfba4ad7ec2821e385bb87b24994)
+        ;
+
+        
+    
+    
+            marker_381e78f8f6d8fd7daad11aeee49a9205.bindTooltip(
+                `<div>
+                     家康の湯（足湯／休止中）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

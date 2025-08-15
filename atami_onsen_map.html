@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1affa78a400698bf1d95c19500bdcc7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1affa78a400698bf1d95c19500bdcc7a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1affa78a400698bf1d95c19500bdcc7a = L.map(
+                "map_1affa78a400698bf1d95c19500bdcc7a",
+                {
+                    center: [35.1036728, 139.077611],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6496a574bfc1df3a84e499bc862a319c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+            var marker_c5dbe5be4632d0fdd81f8a535142fec6 = L.marker(
+                [35.1036728, 139.077611],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+            var icon_4181596c5aa291a7b3924174a3ee2773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c5dbe5be4632d0fdd81f8a535142fec6.setIcon(icon_4181596c5aa291a7b3924174a3ee2773);
+        
+    
+        var popup_03ea673aa15887ab1a4c5a716e21e103 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68dfacd09bbd5f8f80b14b77f00359a4 = $(`<div id="html_68dfacd09bbd5f8f80b14b77f00359a4" style="width: 100.0%; height: 100.0%;">熱海駅（中心）</div>`)[0];
+            popup_03ea673aa15887ab1a4c5a716e21e103.setContent(html_68dfacd09bbd5f8f80b14b77f00359a4);
+        
+
+        marker_c5dbe5be4632d0fdd81f8a535142fec6.bindPopup(popup_03ea673aa15887ab1a4c5a716e21e103)
+        ;
+
+        
+    
+    
+            marker_c5dbe5be4632d0fdd81f8a535142fec6.bindTooltip(
+                `<div>
+                     熱海駅（中心）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6983be317755bffd79899cdfcc899579 = L.marker(
+                [35.1026096, 139.0783615],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_3d6b772aa87352d2c9f357278d64fe1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3ea42ef82973ec8b88a741653a917c9 = $(`<div id="html_a3ea42ef82973ec8b88a741653a917c9" style="width: 100.0%; height: 100.0%;">熱海駅前温泉浴場（田原浴場）<br>駅からの距離: 0.137 km</div>`)[0];
+            popup_3d6b772aa87352d2c9f357278d64fe1d.setContent(html_a3ea42ef82973ec8b88a741653a917c9);
+        
+
+        marker_6983be317755bffd79899cdfcc899579.bindPopup(popup_3d6b772aa87352d2c9f357278d64fe1d)
+        ;
+
+        
+    
+    
+            marker_6983be317755bffd79899cdfcc899579.bindTooltip(
+                `<div>
+                     熱海駅前温泉浴場（田原浴場）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee17a21ecff81e2e0eda2d90f00c1172 = L.marker(
+                [35.1018961, 139.0782998],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_53f21ddea1d7fd8d94d3677a83347f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c627646bb0bc1e94df8e7772d9ccbd9 = $(`<div id="html_7c627646bb0bc1e94df8e7772d9ccbd9" style="width: 100.0%; height: 100.0%;">湯宿 一番地（外来入浴）<br>駅からの距離: 0.207 km</div>`)[0];
+            popup_53f21ddea1d7fd8d94d3677a83347f1b.setContent(html_7c627646bb0bc1e94df8e7772d9ccbd9);
+        
+
+        marker_ee17a21ecff81e2e0eda2d90f00c1172.bindPopup(popup_53f21ddea1d7fd8d94d3677a83347f1b)
+        ;
+
+        
+    
+    
+            marker_ee17a21ecff81e2e0eda2d90f00c1172.bindTooltip(
+                `<div>
+                     湯宿 一番地（外来入浴）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a33856dec2b8fa5e16bf59407a0d8ee = L.marker(
+                [35.1020199, 139.0813236],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_c4b975c7aecefd0e7893dd597b409c80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c2e56f10b0207e0edc79fc336c46e6b = $(`<div id="html_6c2e56f10b0207e0edc79fc336c46e6b" style="width: 100.0%; height: 100.0%;">KKRホテル熱海（日帰り）<br>駅からの距離: 0.385 km</div>`)[0];
+            popup_c4b975c7aecefd0e7893dd597b409c80.setContent(html_6c2e56f10b0207e0edc79fc336c46e6b);
+        
+
+        marker_2a33856dec2b8fa5e16bf59407a0d8ee.bindPopup(popup_c4b975c7aecefd0e7893dd597b409c80)
+        ;
+
+        
+    
+    
+            marker_2a33856dec2b8fa5e16bf59407a0d8ee.bindTooltip(
+                `<div>
+                     KKRホテル熱海（日帰り）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b85304c8f3d7207bc181edd162f2751c = L.marker(
+                [35.0991512, 139.0757199],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_6e0a0d502d718473295a1b318dcd3e2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26188664fc463072b00ffa0173aa03b6 = $(`<div id="html_26188664fc463072b00ffa0173aa03b6" style="width: 100.0%; height: 100.0%;">大江戸温泉物語 Premium あたみ（日帰り入浴）<br>駅からの距離: 0.531 km</div>`)[0];
+            popup_6e0a0d502d718473295a1b318dcd3e2e.setContent(html_26188664fc463072b00ffa0173aa03b6);
+        
+
+        marker_b85304c8f3d7207bc181edd162f2751c.bindPopup(popup_6e0a0d502d718473295a1b318dcd3e2e)
+        ;
+
+        
+    
+    
+            marker_b85304c8f3d7207bc181edd162f2751c.bindTooltip(
+                `<div>
+                     大江戸温泉物語 Premium あたみ（日帰り入浴）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b00ebb48c585100fa8269eadf2b4693b = L.marker(
+                [35.0985986, 139.0757854],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_e538ee9dad5f67df3f0542792b4b3c51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b9686c2e5d5480144564bacaf0c0aff = $(`<div id="html_3b9686c2e5d5480144564bacaf0c0aff" style="width: 100.0%; height: 100.0%;">熱海シーサイドスパ＆リゾート（日帰り）<br>駅からの距離: 0.588 km</div>`)[0];
+            popup_e538ee9dad5f67df3f0542792b4b3c51.setContent(html_3b9686c2e5d5480144564bacaf0c0aff);
+        
+
+        marker_b00ebb48c585100fa8269eadf2b4693b.bindPopup(popup_e538ee9dad5f67df3f0542792b4b3c51)
+        ;
+
+        
+    
+    
+            marker_b00ebb48c585100fa8269eadf2b4693b.bindTooltip(
+                `<div>
+                     熱海シーサイドスパ＆リゾート（日帰り）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b05b61d168a1a86c89518fe839d2fe1f = L.marker(
+                [35.088783, 139.079055],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_8ec25dd2df8e160185a1dd4117e151e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2d997f0abb05213a6c36638cfe72620 = $(`<div id="html_b2d997f0abb05213a6c36638cfe72620" style="width: 100.0%; height: 100.0%;">オーシャンスパ Fuua（熱海ベイリゾート後楽園）<br>駅からの距離: 1.661 km</div>`)[0];
+            popup_8ec25dd2df8e160185a1dd4117e151e4.setContent(html_b2d997f0abb05213a6c36638cfe72620);
+        
+
+        marker_b05b61d168a1a86c89518fe839d2fe1f.bindPopup(popup_8ec25dd2df8e160185a1dd4117e151e4)
+        ;
+
+        
+    
+    
+            marker_b05b61d168a1a86c89518fe839d2fe1f.bindTooltip(
+                `<div>
+                     オーシャンスパ Fuua（熱海ベイリゾート後楽園）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c427a615b8e6511b690d1c29e686794a = L.marker(
+                [35.103426, 139.078438],
+                {}
+            ).addTo(map_1affa78a400698bf1d95c19500bdcc7a);
+        
+    
+        var popup_722aaddddf9babba070587e61b41db53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7385c29d17501443680813e4f7f2fb5c = $(`<div id="html_7385c29d17501443680813e4f7f2fb5c" style="width: 100.0%; height: 100.0%;">家康の湯（足湯／休止中）<br>駅からの距離: 0.08 km</div>`)[0];
+            popup_722aaddddf9babba070587e61b41db53.setContent(html_7385c29d17501443680813e4f7f2fb5c);
+        
+
+        marker_c427a615b8e6511b690d1c29e686794a.bindPopup(popup_722aaddddf9babba070587e61b41db53)
+        ;
+
+        
+    
+    
+            marker_c427a615b8e6511b690d1c29e686794a.bindTooltip(
+                `<div>
+                     家康の湯（足湯／休止中）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
