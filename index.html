@@ -3,16 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>熱海駅周辺・日帰り温泉マップ</title>
-  <meta http-equiv="refresh" content="1; url=atami_onsen_map_with_prices.html">
+  <title>シビ登山・熱海編（Aug.2025)</title>
+  <meta name="description" content="シビ登山・熱海編のリンク集。十国峠～岩戸山マップ、伊豆箱根バス時刻表、温泉のマップ。">
+  <!-- 自動遷移（meta refresh）は削除しました -->
+  <style>
+    :root { --fg:#111; --muted:#666; --bg:#fff; --accent:#0a7cff; --border:#e5e7eb; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 2rem;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans JP", Meiryo, sans-serif;
+      line-height: 1.7; color: var(--fg); background: var(--bg);
+    }
+    header h1 { margin: 0 0 .25rem; font-size: clamp(1.4rem, 2.5vw, 2rem); }
+    header p { margin: 0 0 1.25rem; color: var(--muted); }
+    ul.links { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .75rem; }
+    .link-card {
+      border: 1px solid var(--border); border-radius: 14px; padding: 1rem 1.1rem;
+      transition: border-color .15s ease, transform .05s ease;
+    }
+    .link-card:focus-within, .link-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .link-card a {
+      font-weight: 600; text-decoration: none; color: var(--accent);
+      word-break: break-word;
+    }
+    .meta { font-size: .9rem; color: var(--muted); margin-top: .25rem; }
+    footer { margin-top: 2rem; font-size: .85rem; color: var(--muted); }
+  </style>
 </head>
-<body style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, Meiryo, sans-serif; line-height:1.7; margin:2rem;">
-  <h1>熱海駅周辺・日帰り温泉マップ</h1>
-  <p>数秒後に価格・特徴入りマップへ自動で移動します。</p>
-  <ul>
-    <li><a href="atami_onsen_map_with_prices.html">価格・特徴入りマップ（推奨）</a></li>
-    <li><a href="atami_onsen_map.html">ベーシック版マップ</a></li>
-  </ul>
-  <p style="color:#666;font-size:.9rem;">更新: 2025-08-15 04:36:04</p>
+<body>
+  <header>
+    <h1>シビ登山・熱海編（Aug.2025)</h1>
+    <p>下記のリンクから各ページへ移動できます。</p>
+  </header>
+
+  <main>
+    <ul class="links">
+      <li class="link-card">
+        <a href="十国峠～岩戸山マップ.pdf">十国峠～岩戸山マップ.pdf</a>
+        <div class="meta">コース概要マップ（PDF）</div>
+      </li>
+      <li class="link-card">
+        <a href="伊豆箱根バス時刻表.pdf">伊豆箱根バス時刻表.pdf</a>
+        <div class="meta">主要区間のバス時刻（PDF）</div>
+      </li>
+      <li class="link-card">
+        <a href="atami_onsen_map_with_prices.html">温泉のマップ（atami_onsen_map_with_prices.html）</a>
+        <div class="meta">価格・特徴入りの温泉マップ（HTML）</div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <!-- 必要に応じて更新日時などを記載できます -->
+  </footer>
 </body>
 </html>
